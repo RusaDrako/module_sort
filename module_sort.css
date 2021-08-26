@@ -1,0 +1,35 @@
+.module_sort__arrow_block {
+	position: relative;
+	float: right;
+	top: 0px;
+	width: 11px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 3px;
+	font-size: 12px;
+}
+
+.module_sort__arrow_asc,
+.module_sort__arrow_desc {
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.module_sort__arrow_asc:hover,
+.module_sort__arrow_desc:hover {
+	color: #f0f;
+	text-decoration: none;
+}
+
+.module_sort__arrow_asc {
+	top: auto;
+	bottom: 0px;
+}
+
+.module_sort__select {
+	color: #0f0;
+}

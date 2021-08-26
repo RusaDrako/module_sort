@@ -1,0 +1,200 @@
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title>Example</title>
+
+	<link href="./module_sort.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="./module_sort.js"></script>
+
+
+
+
+</head>
+
+
+<body lang="ru">
+
+	<!-- Привмер на базе таблицы -->
+
+	<table module_sort__sort="tab_test">
+		<thead module_sort__header>
+			<th module_sort__filter="name_1">
+				ФИО
+			</th>
+			<th module_sort__filter="name_2">
+				Возраст
+			</th>
+			<th module_sort__filter="name_3">
+				Сумма
+			</th>
+		</thead>
+		<tr module_sort__element>
+			<td module_sort__filter="name_1" module_sort__val="Иванов Иван Иванович">
+				Иванов Иван Иванович
+			</td>
+			<td module_sort__filter="name_2" module_sort__val="38">
+				38
+			</td>
+			<td module_sort__filter="name_3" module_sort__val="600">
+				600
+			</td>
+		</tr>
+		<tr module_sort__element>
+			<td module_sort__filter="name_1" module_sort__val="Сидоров Сидр Сидорович">
+				Сидоров Сидр Сидорович
+			</td>
+			<td module_sort__filter="name_2" module_sort__val="40">
+				40
+			</td>
+			<td module_sort__filter="name_3" module_sort__val="50">
+				50
+			</td>
+		</tr>
+		<tr module_sort__element>
+			<td module_sort__filter="name_1" module_sort__val="Петров Пётр Петрович">
+				Петров Пётр Петрович
+			</td>
+			<td module_sort__filter="name_2" module_sort__val="50">
+				50
+			</td>
+			<td module_sort__filter="name_3" module_sort__val="500">
+				500
+			</td>
+		</tr>
+		<tr module_sort__element>
+			<td module_sort__filter="name_1" module_sort__val="Сидоров Иван Петрович">
+				Сидоров Иван Петрович
+			</td>
+			<td module_sort__filter="name_2" module_sort__val="55">
+				55
+			</td>
+			<td module_sort__filter="name_3" module_sort__val="400">
+				400
+			</td>
+		</tr>
+		<tr module_sort__element>
+			<td module_sort__filter="name_1" module_sort__val="Иванов Сидр Иванович">
+				Иванов Сидр Иванович
+			</td>
+			<td module_sort__filter="name_2" module_sort__val="60">
+				60
+			</td>
+			<td module_sort__filter="name_3" module_sort__val="300">
+				300
+			</td>
+		</tr>
+	</table>
+
+	<style media="screen">
+		table {
+			background: #888;
+		}
+		th {
+			background: #aaa;
+		}
+		td {
+			background: #fff;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			module_sort.activate('[module_sort__sort=tab_test]');
+		})
+	</script>
+
+
+	<hr>
+
+	<!-- Привмер на базе div -->
+
+	<div module_sort__sort="div_test">
+		<div module_sort__header>
+			<div module_sort__filter="name_1">
+				ФИО
+			</div><div module_sort__filter="name_2">
+				Возраст
+			</div><div module_sort__filter="name_3">
+				Сумма
+			</div>
+		</div>
+		<div module_sort__element>
+			<div module_sort__filter="name_1" module_sort__val="Иванов Иван Иванович">
+				Иванов Иван Иванович
+			</div><div module_sort__filter="name_2" module_sort__val="38">
+				38
+			</div><div module_sort__filter="name_3" module_sort__val="600">
+				600
+			</div>
+		</div>
+		<div module_sort__element>
+			<div module_sort__filter="name_1" module_sort__val="Сидоров Сидр Сидорович">
+				Сидоров Сидр Сидорович
+			</div><div module_sort__filter="name_2" module_sort__val="40">
+				40
+			</div><div module_sort__filter="name_3" module_sort__val="50">
+				50
+			</div>
+		</div>
+		<div module_sort__element>
+			<div module_sort__filter="name_1" module_sort__val="Петров Пётр Петрович">
+				Петров Пётр Петрович
+			</div><div module_sort__filter="name_2" module_sort__val="50">
+				50
+			</div><div module_sort__filter="name_3" module_sort__val="500">
+				500
+			</div>
+		</div>
+		<div module_sort__element>
+			<div module_sort__filter="name_1" module_sort__val="Сидоров Иван Петрович">
+				Сидоров Иван Петрович
+			</div><div module_sort__filter="name_2" module_sort__val="55">
+				55
+			</div><div module_sort__filter="name_3" module_sort__val="400">
+				400
+			</div>
+		</div>
+		<div module_sort__element>
+			<div module_sort__filter="name_1" module_sort__val="Иванов Сидр Иванович">
+				Иванов Сидр Иванович
+			</div><div module_sort__filter="name_2" module_sort__val="60">
+				60
+			</div><div module_sort__filter="name_3" module_sort__val="300">
+				300
+			</div>
+		</div>
+	</div>
+
+	<style media="screen">
+		div[module_sort__sort] {
+			background: #888;
+		}
+		div[module_sort__header] div[module_sort__filter],
+		div[module_sort__element] div[module_sort__filter] {
+			display: inline-block;
+			width: 25%;
+			margin: 0;
+			padding: 5px 10px;
+			background: #fff;
+			border-bottom: 1px solid #888;
+			box-sizing: border-box;
+		}
+		div[module_sort__header] div[module_sort__filter] {
+			background: #aaa;
+		}
+		div[module_sort__header] div[module_sort__filter]:first-child,
+		div[module_sort__element] div[module_sort__filter]:first-child {
+			width: 50%;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			module_sort.activate('[module_sort__sort=div_test]');
+		})
+	</script>
+
+</body>
+</html>
