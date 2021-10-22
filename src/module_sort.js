@@ -7,10 +7,7 @@
 
 
 
-/**
- *	@version 0.0.1
- *	@author Leonid Petukhov
- */
+/** */
 (function($) {
 	/** Имя модуля */
 	var MODULE_NAME = 'module_sort';

@@ -1,12 +1,16 @@
 # Модуль сортировки элементов
+____
+
+![license](https://img.shields.io/github/license/RusaDrako/module_sort?style=plastic)
+![release](https://img.shields.io/github/v/release/RusaDrako/module_sort?style=plastic)
+
+
 
 ## Оглавление
 
 1. [Подключение](#Подключение)
 2. [Структура сортировки](#Структура_сортировки)
 3. [Активация сортировки](#Активация_сортировки)
-
-
 
 
 
@@ -21,8 +25,6 @@
 ```
 
 [Оглавление](#Оглавление)
-
-
 
 
 
@@ -71,8 +73,6 @@
 
 
 
-
-
 ## Активация сортировки
 
 Активация сортировки
@@ -85,8 +85,6 @@ module_sort.activate({$selector})
 
 
 [Оглавление](#Оглавление)
-
-
 
 
 
